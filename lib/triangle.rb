@@ -8,7 +8,7 @@ class Triangle
   end 
   
   def kind 
-    # raise TriangleError 
+    # raise TriangleError if the sum of any 2 sides < the third side 
   end 
   
   class TriangleError < StandardError
