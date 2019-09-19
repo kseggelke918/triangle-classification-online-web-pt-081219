@@ -16,8 +16,6 @@ class Triangle
       return :isosceles
     elsif side_1_length != side_2_length && side_1_length != side_3_length && side_2_length != side_3_length
       return :scalene
-    # else 
-    #   "Is this a triange???"
     end 
   end 
   
