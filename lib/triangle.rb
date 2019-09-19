@@ -8,11 +8,6 @@ class Triangle
   end 
   
   def kind 
-    # equilateral = all sides equal 
-    # isosceles = 2 equal sides 
-    # scalene = all 3 sides have different lengths 
-    # raise TriangleError if the sum of any 2 sides < the third side 
-    
     if side_1_length == side_2_length && side_1_length == side_3_length
       put "equilateral"
     end 
@@ -23,12 +18,12 @@ class Triangle
       puts "scalene"
     end 
     if side_1_length + side_2_length < side_3_length || side_3_length + side_2_length < side_1_length || side_1_length + side_3_length < side_2_length
-        raise TriangleError
+        begin 
+          raise TriangleError
         rescue TriangleError
           puts error.message
         end 
-      end 
-      
+    end 
   end 
   
   class TriangleError < StandardError
@@ -38,3 +33,9 @@ class Triangle
   end 
   
 end
+
+
+    # equilateral = all sides equal 
+    # isosceles = 2 equal sides 
+    # scalene = all 3 sides have different lengths 
+    # raise TriangleError if the sum of any 2 sides < the third side 
