@@ -9,7 +9,8 @@ class Triangle
   
   def kind 
     # equilateral = all sides equal 
-    # isosceles = 
+    # isosceles = 2 equal sides 
+    # scalene = 
     # raise TriangleError if the sum of any 2 sides < the third side 
   end 
   
