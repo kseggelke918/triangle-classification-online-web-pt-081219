@@ -10,11 +10,9 @@ class Triangle
   def kind 
     if side_1_length == side_2_length && side_1_length == side_3_length
       return :equilateral
-    end 
-    if side_1_length == side_2_length || side_2_length == side_3_length || side_1_length == side_3_length
+    elsif side_1_length == side_2_length || side_2_length == side_3_length || side_1_length == side_3_length
       return :isosceles
-    end 
-    if side_1_length != side_2_length && side_1_length != side_3_length && side_2_length != side_3_length
+    elsif side_1_length != side_2_length && side_1_length != side_3_length && side_2_length != side_3_length
       return :scalene
     end 
     if side_1_length + side_2_length < side_3_length || side_3_length + side_2_length < side_1_length || side_1_length + side_3_length < side_2_length
