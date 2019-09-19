@@ -8,7 +8,8 @@ class Triangle
   end 
   
   def kind 
-    # equilateral = 
+    # equilateral = all sides equal 
+    # 
     # raise TriangleError if the sum of any 2 sides < the third side 
   end 
   
