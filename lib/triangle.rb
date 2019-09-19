@@ -15,7 +15,7 @@ class Triangle
     elsif side_1_length != side_2_length && side_1_length != side_3_length && side_2_length != side_3_length
       return :scalene
     end 
-    if side_1_length + side_2_length < side_3_length || side_3_length + side_2_length < side_1_length || side_1_length + side_3_length < side_2_length || side_1_length <= 0 || side_2_length <= 0 || side_3_length <=0 
+    elsif side_1_length + side_2_length < side_3_length || side_3_length + side_2_length < side_1_length || side_1_length + side_3_length < side_2_length || side_1_length <= 0 || side_2_length <= 0 || side_3_length <=0 
         begin 
           raise TriangleError
         rescue TriangleError
