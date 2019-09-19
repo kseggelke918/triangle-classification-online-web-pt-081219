@@ -9,7 +9,7 @@ class Triangle
   
   def kind 
     if side_1_length == side_2_length && side_1_length == side_3_length
-      put "equilateral"
+      puts "equilateral"
     end 
     if side_1_length == side_2_length || side_2_length == side_3_length || side_1_length == side_3_length
       puts "isoscles"
