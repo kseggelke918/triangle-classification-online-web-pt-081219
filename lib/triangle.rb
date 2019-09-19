@@ -32,7 +32,9 @@ class Triangle
   end 
   
   class TriangleError < StandardError
-    #triangle error code 
+    def message
+      "this is not a valid triange"
+    end 
   end 
   
 end
