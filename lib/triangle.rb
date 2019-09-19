@@ -16,14 +16,8 @@ class Triangle
       return :isosceles
     elsif side_1_length != side_2_length && side_1_length != side_3_length && side_2_length != side_3_length
       return :scalene
-    # elsif side_1_length + side_2_length < side_3_length || side_3_length + side_2_length < side_1_length || side_1_length + side_3_length < side_2_length || side_1_length <= 0 || side_2_length <= 0 || side_3_length <=0 
-    #       puts "this should be the error message"
-    #     # begin 
-    #     # raise TriangleError
-    #     # rescue TriangleError
-    #     #   puts error.message
-    else 
-       "Is this a triange???"
+    # else 
+    #   "Is this a triange???"
     end 
   end 
   
