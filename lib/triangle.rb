@@ -20,9 +20,6 @@ class Triangle
   end 
   
   class TriangleError < StandardError
-    def message
-      "this is not a valid triange"
-    end 
   end 
   
 end
